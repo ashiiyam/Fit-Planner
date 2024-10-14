@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitPlanner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Title with Logo -->
+  <div class="logo-title">
+    <img src="images/logo.png" alt="FitPlanner Logo" class="logo">
+  </div>
+  
+  <!-- Digital Closet Section -->
+  <div>
+    <h2>Your Closet</h2>
+    <input type="file" id="outfit-upload" accept="image/*">
+    <button onclick="addOutfit()">Add Outfit</button>
+    <div id="closet"></div>
+  </div>
+  
+  <!-- Weather Section -->
+  <div>
+    <h2>Weather</h2>
+    <input type="text" id="location" placeholder="Enter city">
+    <button onclick="getWeather()">Get Weather</button>
+    <p id="weather-result"></p>
+</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
